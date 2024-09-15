@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,64 +12,83 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(img.jpg) no-repeat;
+    background: url('assets/menu/ialogin.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    perspective: 1000px; /* Para o efeito de rotação 3D */
 }
 
 .wrapper {
     width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #fff;
+    background: rgba(180, 67, 22, 0.103);
     border-radius: 20px;
     padding: 30px 40px;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
 }
 
-.wrapper h1 {
-    font-size: 36px;
+.wrapper.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Elementos vindo de diferentes direções */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
     text-align: center;
+    opacity: 0;
+    animation: fromTop 0.8s ease forwards 0.2s; /* Título vem de cima */
 }
 
-.wrapper .input-box {
+.input-box {
     position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fromLeft 0.8s ease forwards 0.4s; /* Input box vem da esquerda */
 }
 
 .input-box input {
     width: 100%;
-    height: 100%;
+    padding: 15px 20px;
     background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.171);
+    border-radius: 30px;
     color: #fff;
-    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    transition: border 0.3s ease;
 }
 
-.input-box input::placeholder {
-    color: #fff;
+.input-box input:focus {
+    border-color: #fff;
 }
 
 .input-box i {
     position: absolute;
-    right: 20px;
     top: 50%;
+    right: 20px;
     transform: translateY(-50%);
+    color: #fff;
     font-size: 20px;
 }
 
-.wrapper .remember-forgot {
+.input-box i:hover {
+    transform: translateY(-50%) rotate(360deg); /* Animação de rotação ao passar o mouse */
+    transition: transform 0.5s ease;
+}
+
+.remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+    font-size: 14px;
+    opacity: 0;
+    animation: fromRight 0.8s ease forwards 0.6s; /* Links vêm da direita */
 }
 
 .remember-forgot label input {
@@ -82,36 +101,167 @@ body {
     text-decoration: none;
 }
 
-.remember-forgot a:houver {
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
-.wrapper .btn {
+.btn {
     width: 100%;
-    height: 45px;
-    background: #fff;
+    padding: 15px 0;
+    background-color: #ca6740;
     border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-size: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fromBottom 0.8s ease forwards 0.8s; /* Botão vem de baixo */
 }
 
-.wrapper .register-link {
-    font-size: 14.5px;
+.btn:hover {
+    background-color: #ee842d;
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.register-link,
+.login-link {
     text-align: center;
-    margin-top: 20px 0 15px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fromTop 0.8s ease forwards 1s; /* Links extras vêm de cima */
 }
 
-.register-link p a {
+.register-link a,
+.login-link a {
     color: #fff;
-    text-decoration: underline;
-    font-weight: 600;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.register-link p a:hover {
+.register-link a:hover,
+.login-link a:hover {
     text-decoration: underline;
+}
+
+.icon-close { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    animation: fromRight 0.8s ease forwards 0.1s; /* Fechar vem da direita */
+    transition: transform 0.3s ease;
+    background: #ca6740;
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 24px; /* Tamanho do "X" */
+    text-align: center;
+    
+}
+
+.icon-close:hover{
+    background-color: #ee842d;
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+} 
+
+
+
+/* Animações para cada direção */
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px); /* Vem de cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Vem de baixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Vem da esquerda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Vem da direita */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Efeito de rotação para troca de tela */
+@keyframes rotateScreen {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg); /* Rotaciona 180º */
+    }
+}
+
+/* Adiciona uma classe "rotate" para a rotação */
+.wrapper.rotate {
+    animation: rotateScreen 0.8s ease forwards;
+    transform-style: preserve-3d; /* Garante que o efeito 3D seja aplicado corretamente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adiciona uma classe de animação para os elementos da tela de registro */
+.register-wrapper.active .input-box,
+.register-wrapper.active .btn {
+    animation: fromSides 0.8s ease forwards;
+}
+
+/* Animação para os elementos saírem das laterais e se juntarem no centro */
+@keyframes fromSides {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Inicia fora da tela (lado direito) */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move para o centro */
+    }
+}
+
+/* Caso queira adicionar uma pequena diferença na animação dos botões */
+.register-wrapper.active .btn {
+    animation-delay: 0.4s; /* O botão pode aparecer um pouco depois dos campos de entrada */
 }

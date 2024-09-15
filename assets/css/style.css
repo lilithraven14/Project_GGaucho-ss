@@ -3814,11 +3814,17 @@ table tbody tr td {
 	cursor: pointer;
 }
 
+
+
+
+
+
 .module-reservation .btn-popup i {
 	display: none;
 }
 
 .module-reservation .btn-popup:hover,
+.botao .btn-popup,
 .module-reservation .btn-popup-theme,
 .affix .module-reservation .btn-popup {
 	background-color: #c59d5f;

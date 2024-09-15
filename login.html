@@ -3,41 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-     rel='stylesheet'>
+    <script defer src="script-register.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    
-    <div class="wrapper">
+    <!-- Tela de Login -->
+    <div class="wrapper login-wrapper active">
+        <span class="icon-close" href="index.html"><i class='bx bx-x'></i></span>
         <form action="">
-            <h1>Login</h1>
+            <h1>Conectar</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" 
-                required>
+                <input type="text" placeholder="Nome de Usuário" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="Password" 
-                placeholder="Password" required>
+                <input type="password" placeholder="Senha" required>
                 <i class='bx bxs-lock'></i>
             </div>
 
             <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot Password?</a>
+                <label><input type="checkbox"> Lembrar-me</label>
+                <a href="#">Esqueceu sua senha?</a>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" >Entrar</button>
 
             <div class="register-link">
-                <p>Don`t have an account?<a href="#">Register</a></p>
+                <p>Não possui uma conta? <a href="index.html" class="register-link">Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Tela de Registro -->
+    <div class="wrapper register-wrapper">
+        <span class="icon-close"><i class='bx bx-x'></i></span>
+        <form action="">
+            <h1>Cadastrar-se</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nome de Usuário" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="E-mail" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bxs-lock'></i>
             </div>
 
+            <button type="submit" class="btn">Cadastrar-se</button>
+
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="#" class="login-link">Conectar-se</a></p>
+            </div>
         </form>
     </div>
 </body>
