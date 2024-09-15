@@ -62,3 +62,55 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+document.getElementById('toggleMap').addEventListener('click', function() {
+    const map = document.getElementById('map');
+    map.classList.toggle('hidden');
+});
+
+
+
+document.getElementById('toggleMap').addEventListener('click', function() {
+    const map = document.getElementById('map');
+    map.classList.toggle('hidden');
+});
+
+const mapContainer = document.querySelector('.map-container');
+
+mapContainer.addEventListener('mousemove', function(e) {
+    const width = mapContainer.offsetWidth;
+    const height = mapContainer.offsetHeight;
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    const moveX = (mouseX / width - 0.5) * 10;
+    const moveY = (mouseY / height - 0.5) * 10;
+
+    mapContainer.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg)`;
+});
+
+mapContainer.addEventListener('mouseleave', function() {
+    mapContainer.style.transform = 'rotateX(0deg) rotateY(0deg)';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

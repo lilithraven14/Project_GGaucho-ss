@@ -142,6 +142,17 @@ textarea {
 	box-shadow: none;
 }
 
+
+
+
+/* Define o tamanho do mapa */
+
+
+/* Opções de customização adicionais para outros elementos do site */
+
+
+
+
 /*------------------------------------*\
     #GLOBAL STYLES
 \*------------------------------------*/
@@ -164,6 +175,128 @@ body {
 	margin: 0;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.map-container {
+    position: relative;
+    width: 99%;
+    height: 80vh;
+    margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+iframe#map {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.map-container:hover iframe#map {
+    transform: scale(1.01);
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.7s ease-in-out;
+}
+
+.map-container:hover .map-overlay {
+    left: 0;
+}
+
+.overlay-text {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideIn 1s forwards;
+}
+
+button#toggleMap {
+    padding: 12px 25px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    transform: translateX(50%);
+    animation: slideIn 1s 0.5s forwards;
+}
+
+button#toggleMap:hover {
+    background-color: #c0392b;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hidden {
+    transform: scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 60vh;
+    }
+    
+    .overlay-text {
+        font-size: 24px;
+    }
+
+    button#toggleMap {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Opções de customização adicionais para outros elementos do site */
+
+
 .wrapper {
 	background-color: #ffffff;
 }
@@ -174,6 +307,7 @@ body {
 ::-moz-selection {
  text-shadow: none;
 }
+
 
 ::selection {
 	background-color: #c59d5f;
