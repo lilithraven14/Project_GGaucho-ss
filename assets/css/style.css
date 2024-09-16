@@ -298,7 +298,7 @@ button#toggleMap:hover {
 
 
 .wrapper {
-	background-color: #ffffff;
+	background-color: #fbf1db;
 }
 
 * {
@@ -311,7 +311,7 @@ button#toggleMap:hover {
 
 ::selection {
 	background-color: #c59d5f;
-	color: #ffffff;
+	color: #f0d2a148;
 	text-shadow: none;
 }
 
@@ -1392,7 +1392,7 @@ blockquot {
 }
 
 .bg-white {
-	background-color: #ffffff !important;
+	background-color: #fbf1db !important;
 }
 
 .bg-dark {
@@ -1789,17 +1789,18 @@ blockquot {
 
 /* Button Secondary*/
 .btn--secondary {
-	background-color: #222222;
-	color: #ffffff;
-	border: 2px solid #222222;
+	background-color: #e7c681;
+	color: #ce8d00f1;
+	border: 2px solid #dbb35d;
 }
 
 .btn--secondary:active,
 .btn--secondary:focus,
 .btn--secondary:hover {
-	background-color: #c59d5f;
-	color: #ffffff;
-	border-color: #c59d5f;
+	background-color: #e7c681;
+	color: #ce8d00f1;
+	border-color: #dbb35d;
+	transform: translateY(-6px);
 }
 
 /* Button White */
@@ -1885,32 +1886,35 @@ blockquot {
 	color: #ffffff;
 	background-color: #c59d5f;
 	border-color: #c59d5f;
+	transform: translateY(-6px);
 }
 
 .btn--bordered.btn--secondary {
-	color: #222222;
-	border-color: #222222;
+	color: #ce8d00f1;
+	border-color: #ce8d00f1;
 }
 
 .btn--bordered.btn--secondary:active,
 .btn--bordered.btn--secondary:focus,
 .btn--bordered.btn--secondary:hover {
-	color: #ffffff;
-	background-color: #222222;
-	border-color: #222222;
+	color: #ce8d00f1;
+	background-color: #e7c681;
+	border-color: #dbb35d;
 }
 
 .btn--bordered.btn--white {
 	color: #ffffff;
 	border-color: #ffffff;
+	
 }
 
 .btn--bordered.btn--white:active,
 .btn--bordered.btn--white:focus,
 .btn--bordered.btn--white:hover {
-	color: #c59d5f;
-	background-color: #ffffff;
-	border-color: #ffffff;
+	color: #ce8d00f1;
+	background-color: #e7c681;
+	border-color: #dbb35d;
+	transform: translateY(-6px);
 }
 
 .btn--white.btn--secondary {
@@ -2369,6 +2373,7 @@ ul.dot-list li i {
 	color: #c59d5f;
 	background-color: transparent;
 	border: none;
+	transform: translateY(-6px);
 }
 
 .tabs .nav-tabs > li > a:after {
@@ -2509,7 +2514,7 @@ ul.dot-list li i {
 
 .accordion .panel .panel--body {
 	padding: 20px;
-	color: #a5a5a5;
+	color: #fbf1db;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 22px;
@@ -4013,9 +4018,9 @@ table tbody tr td {
 .botao .btn-popup,
 .module-reservation .btn-popup-theme,
 .affix .module-reservation .btn-popup {
-	background-color: #c59d5f;
-	color: #ffffff;
-	border-color: #c59d5f;
+	background-color: #e7c681;
+	color: #ce8d00f1;
+	border-color: #dbb35d;
 }
 
 .module-reservation .btn-popup-theme:hover {
@@ -4640,7 +4645,7 @@ Header Customaztion
 
 /* Header Fixed */
 .header-fixed .affix {
-	background-color: #ffffff;
+	background-color: #fbf1db;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
 	-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
@@ -9700,10 +9705,12 @@ footer {
 	line-height: 49px;
 	text-transform: uppercase;
 	color: #c59d5f;
+	transform: translateY(-6px);
 }
 
 .footer--widget-content a:hover {
 	color: #ffffff;
+	transform: translateY(-6px);
 }
 
 .footer--reservation {
@@ -11712,7 +11719,7 @@ footer .text-right,
     #Dishes
 \*------------------------------------*/
 .specials .dishes-wrapper {
-	background-color: #ffffff;
+	background: #fbf1db;
 	border-radius: 2px;
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
