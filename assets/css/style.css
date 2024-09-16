@@ -1179,7 +1179,7 @@ section {
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
 
 .col-lg-5ths {
 	width: 20%;
@@ -4700,7 +4700,7 @@ Header Customaztion
 /* Header #3 */
 .header-3 .navbar-header > .logo {
 	position: absolute;
-	left: 43%;
+	left: 45%;
 	margin-left: -51px;
 }
 
@@ -6779,6 +6779,7 @@ a.next-section:hover {
 	padding: 40px;
 	position: relative;
 	text-align: center;
+	border-radius: 12px;
 }
 
 .testimonial-1 .testimonial-panel:before {
@@ -6789,6 +6790,7 @@ a.next-section:hover {
 	top: 0;
 	left: 30px;
 	background-image: url(../images/testimonial/ribbon.png);
+	border-radius: 12px;
 }
 
 .testimonial-1 .testimonial-panel:after {
@@ -6805,6 +6807,7 @@ a.next-section:hover {
 	-ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	z-index: -1;
+	border-radius: 12px;
 }
 
 .testimonial .testimonial-panel p {
@@ -6814,6 +6817,7 @@ a.next-section:hover {
 	color: #282828;
 	line-height: 32px;
 	margin-bottom: 23px;
+	border-radius: 12px;
 }
 
 .testimonial--rating {
@@ -6829,6 +6833,7 @@ a.next-section:hover {
 .testimonial-panel .testimonial--img {
 	margin-bottom: 24px;
 	position: relative;
+	border-radius: 12vh;
 }
 
 .testimonial-panel .testimonial--meta .testimonial--img:before {
