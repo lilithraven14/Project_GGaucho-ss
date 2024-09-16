@@ -1311,12 +1311,14 @@ blockquot {
 	position: absolute;
 	color: #222222;
 	line-height: 1.8;
+	border-radius: 12px;
 }
 
 .blockquote-2:before {
 	content: "\f10d";
 	top: 0;
 	left: 0;
+	border-radius: 12px;
 }
 
 .blockquote-2:after {
@@ -1344,6 +1346,35 @@ blockquot {
 .blockquote-4 .quote-author {
 	color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------*\
     #BACKGROUNDS
@@ -1401,6 +1432,7 @@ blockquot {
 	top: 0;
 	width: 100%;
 	z-index: -1;
+	border-radius: 12px;
 }
 
 .bg-overlay-light:before {
@@ -1712,7 +1744,8 @@ blockquot {
 	padding: 0;
 	line-height: 49px;
 	width: 170px;
-	height: 51px;
+	height: 51px; 
+	border-radius: 12px;
 }
 
 .btn.active,
@@ -3943,10 +3976,13 @@ table tbody tr td {
 	letter-spacing: 0.26px;
 	padding: 0 8px;
 	color: #ffffff;
-	display: block;
+	display: flex; /* Altera para flexbox */
+	justify-content: center; /* Centraliza horizontalmente */
+	align-items: center; /* Centraliza verticalmente */
 	margin-right: 25px;
 	cursor: pointer;
 }
+
 
 
 
@@ -6497,7 +6533,7 @@ a.next-section:hover {
 	-moz-box-shadow: 0 0 18px rgba(40, 40, 40, 0.12);
 	-ms-box-shadow: 0 0 18px rgba(40, 40, 40, 0.12);
 	box-shadow: 0 0 18px rgba(40, 40, 40, 0.12);
-	border-radius: 2px;
+	
 }
 
 .member {
@@ -6511,12 +6547,14 @@ a.next-section:hover {
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
+	border-radius: 12px;
 }
 
 .member .member-img {
 	position: relative;
 	margin-bottom: 0;
 	overflow: hidden;
+	border-top-left-radius: 12px;
 }
 
 .member .member-img img {
@@ -6591,6 +6629,7 @@ a.next-section:hover {
 
 .member .member-info {
 	padding-top: 30px;
+	border-radius: 12px;
 }
 
 .member .member-info h5 {
@@ -6600,6 +6639,7 @@ a.next-section:hover {
 	line-height: 1;
 	text-transform: capitalize;
 	margin-bottom: 14px;
+	border-radius: 12px;
 }
 
 .member .member-info h6 {
@@ -6609,11 +6649,13 @@ a.next-section:hover {
 	font-weight: 400;
 	line-height: 1;
 	margin-bottom: 0;
+	border-radius: 12px;
 }
 
 /*  team 1 */
 .team-1 .member .member-info {
 	padding-bottom: 30px;
+	border-radius: 12px;
 }
 
 /*  team 3 */
@@ -6643,10 +6685,12 @@ a.next-section:hover {
 	-moz-transition: all 0.35s;
 	-o-transition: all 0.35s;
 	transition: all 0.35s;
+	border-radius: 12px;
 }
 
 .team-3 .member .member-info h5 {
 	color: #ffffff;
+	border-radius: 12px;
 }
 
 .team-3 .member:hover .member-overlay .member-hover .member-social {
@@ -6655,6 +6699,7 @@ a.next-section:hover {
 
 .team-3 .member:hover .member-overlay .member-hover .member-info {
 	transform: translateY(170px);
+	border-radius: 12px;
 }
 
 /*  team 4 */
@@ -8140,6 +8185,7 @@ td.cart-product-quantity {
 
 .cart-shiping .col-xs-12 {
 	position: relative;
+	border-radius: 12px;
 }
 
 .cart-shiping i {
@@ -9647,6 +9693,7 @@ footer {
 	border-radius: 3px;
 	margin-top: -179px;
 	padding-top: 20px;
+	border-radius: 12px;
 }
 
 .footer--reservation-wrapper {
@@ -11650,6 +11697,7 @@ footer .text-right,
 	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	-ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
+	border-radius: 12px;
 }
 
 .dish-panel {
@@ -11687,11 +11735,13 @@ footer .text-right,
 
 .dish-panel .dish--img {
 	position: relative;
+	border-radius: 12px;
 }
 
 .dish-panel .dish--img img {
 	max-width: 100%;
 	height: 100%;
+	border-radius: 12px;
 }
 
 /* Dish Overlay */
@@ -11703,6 +11753,7 @@ footer .text-right,
 	height: 100%;
 	padding: 5px 0;
 	cursor: pointer;
+	border-radius: 12px;
 }
 
 .dish-panel .dish--img .dish--overlay:before {
@@ -11712,6 +11763,7 @@ footer .text-right,
 	width: 100%;
 	height: 100%;
 	content: "";
+	border-radius: 12px;
 }
 
 .dish-panel .dish--img .dish--overlay .dish-popup {
@@ -11724,10 +11776,12 @@ footer .text-right,
 	-moz-transition: all .3s linear;
 	transition: all .3s linear;
 	transform: scale(0);
+	border-radius: 12px;
 }
 
 .dish-panel:hover .dish--img .dish--overlay .dish-popup {
 	transform: scale(1);
+	border-radius: 12px;
 }
 
 .dish-popup i {
@@ -11817,6 +11871,7 @@ footer .text-right,
 .specials-1 .dishes-wrapper {
 	padding: 80px;
 	position: relative;
+	
 }
 
 .specials-1 .dishes-wrapper:after,
@@ -11834,12 +11889,15 @@ footer .text-right,
 	-ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	z-index: -1;
+	border-radius: 12px;
+	
 }
 
 /* specials #2 */
 .specials-2 .dishes-wrapper {
 	padding: 70px 70px 30px 70px;
 	position: relative;
+	border-radius: 12px;
 }
 
 .specials-2 .dish-panel {
@@ -12160,6 +12218,7 @@ section.menu-5 .dishes-bg {
 .menu-5 .dish-panel .dish--content {
 	padding: 40px;
 	height: auto;
+	
 }
 
 .menu-5 .dish-panel .dish--title {
@@ -12441,10 +12500,12 @@ section.menu-5 .dishes-bg {
 \*------------------------------------*/
 .banner .banner-panel .banner--img {
 	margin-bottom: 28px;
+	border-radius: 12px;
 }
 
 .banner .banner-panel .banner--content {
 	padding: 0 10px;
+	border-radius: 12px;
 }
 
 .banner .banner-panel .banner--content h3 {
@@ -12453,16 +12514,19 @@ section.menu-5 .dishes-bg {
 	font-family: 'Great Vibes', cursive;
 	font-weight: 400;
 	margin-bottom: 15px;
+	border-radius: 12px;
 }
 
 .banner .banner-panel .banner--content h4 {
 	font-size: 28px;
 	font-weight: 400;
 	margin-bottom: 20px;
+	border-radius: 12px;
 }
 
 .banner .banner-panel .banner--content p {
 	font-size: 14px;
+	border-radius: 12px;
 }
 
 .banner .btn--link {
@@ -12518,6 +12582,7 @@ section.menu-5 .dishes-bg {
 	margin-top: 10px;
 	max-width: 100%;
 	height: auto;
+	border-radius: 12px;
 }
 
 /* Banner #6 */
@@ -12559,6 +12624,7 @@ section.menu-5 .dishes-bg {
 /* Banner #7 */
 .banner-7 .banner-panel .banner--img {
 	position: relative;
+	border-radius: 12px;
 }
 
 .banner-7 .banner-panel .banner--img:before {
@@ -12577,6 +12643,7 @@ section.menu-5 .dishes-bg {
 	bottom: 0;
 	right: 0;
 	opacity: 0.86;
+	border-radius: 12px;
 }
 
 .banner-7 .banner-panel .banner--img .banner--overlay {
@@ -12588,6 +12655,7 @@ section.menu-5 .dishes-bg {
 	font-weight: 400;
 	line-height: 29px;
 	width: 100%;
+	border-radius: 12px;
 }
 
 /* Custom, iPhone Retina */
@@ -12595,6 +12663,7 @@ section.menu-5 .dishes-bg {
 
 .banner-panel {
 	margin-bottom: 30px;
+	
 }
 
 .banner-5 .banner--desc {
@@ -12607,6 +12676,8 @@ section.menu-5 .dishes-bg {
 	max-width: 340px;
 	margin-right: auto;
 	margin-left: auto;
+	border-radius: 12px;
+	
 }
 
 .banner-carousel img {
@@ -12622,6 +12693,7 @@ section.menu-5 .dishes-bg {
 
 .banner-2 .banner-img img {
 	margin-top: 50px;
+	
 }
 
 .banner-6 .panel--logos li {
