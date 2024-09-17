@@ -298,7 +298,7 @@ button#toggleMap:hover {
 
 
 .wrapper {
-	background-color: #fbf1db;
+	background-color: #f9e3b0;
 }
 
 * {
@@ -1389,11 +1389,11 @@ blockquot {
 }
 
 .bg-gray {
-	background-color: #f9f9f9 !important;
+	background-color: #f9e3b0 !important;
 }
 
 .bg-white {
-	background-color: #fbf1db !important;
+	background-color: #f9e3b0 !important;
 }
 
 .bg-dark {
@@ -4661,7 +4661,7 @@ Header Customaztion
 
 /* Header Fixed */
 .header-fixed .affix {
-	background-color: #fbf1db;
+	background-color: #f9e3b0;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
 	-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
@@ -9575,12 +9575,12 @@ footer .widget-instagram .insta-hover i {
 }
 
 .instasection a {
-/*width: 168px;
+	width: 168px;
 	height: 168px;
 	float: left;
 	display: inline-block;
 	margin: 0;
-	position: relative;*/
+	position: relative;
 }
 
 .instasection a img {
@@ -9742,6 +9742,7 @@ footer {
 	margin-top: -179px;
 	padding-top: 20px;
 	border-radius: 12px;
+	border: 2px solid #ffe5ab; /* Define a cor da borda e o estilo */
 }
 
 .footer--reservation-wrapper {
@@ -9877,6 +9878,7 @@ footer {
 /* Footer #1 */
 .footer-1 {
 	padding-top: 100px;
+	background: #f9e3b0;
 }
 
 /* Footer #3 */
@@ -11740,7 +11742,7 @@ footer .text-right,
     #Dishes
 \*------------------------------------*/
 .specials .dishes-wrapper {
-	background: #fbf1db;
+	background: #f9e3b0;
 	border-radius: 2px;
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
 	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.26);
@@ -12220,7 +12222,7 @@ section.menu-5 .dishes-bg {
 }
 
 .menu-5 .dish-panel {
-	background-color: #ffffff;
+	background-color: #ffedc3;
 	overflow: hidden;
 	text-align: center;
 	margin-bottom: 0;
