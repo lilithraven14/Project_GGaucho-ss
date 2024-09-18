@@ -392,7 +392,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #222222;
+	color: #a8834b;
 	font-family: 'Kaushan Script', cursive;
 	font-weight: 700;
 	margin: 0 0 28px;
@@ -430,7 +430,7 @@ h6 {
 }
 
 p {
-	color: #a5a5a5;
+	color:  rgb(196, 127, 38);
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 22px;
@@ -590,7 +590,7 @@ text-center-sm {
 }
 
 .color-white {
-	color: #ffffff !important;
+	color: #bf983b !important;
 }
 
 .color-gray {
@@ -1904,8 +1904,8 @@ blockquot {
 }
 
 .btn--bordered.btn--white {
-	color: #ffffff;
-	border-color: #ffffff;
+	color: #e3b977;
+	border-color: #e3b977;
 	
 }
 
@@ -2122,7 +2122,7 @@ blockquot {
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 49px;
-	border: 1px solid #eee;
+	border: 1px solid #c77920;	
 	background: transparent;
 	padding-left: 18px;
 	margin-bottom: 30px;
@@ -2134,6 +2134,7 @@ blockquot {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	height: 49px;
+	border-radius: 12px;
 }
 
 .form-control:focus {
@@ -2144,15 +2145,15 @@ blockquot {
 }
 /* Placeholder */
 .form-control::-webkit-input-placeholder {
- color: #a5a5a5;
+ color: #c77920;
  text-transform: capitalize;
 }
 .form-control::-moz-placeholder {
- color: #a5a5a5;
+ color: #c77920;
  text-transform: capitalize;
 }
 .form-control::-ms-input-placeholder {
- color: #a5a5a5;
+ color: #c77920;
  text-transform: capitalize;
 }
 
@@ -2187,7 +2188,7 @@ blockquot {
 
 .form-select select {
 	line-height: 1;
-	color: #a5a5a5;
+	color: rgb(179, 109, 6);
 	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3027,18 +3028,20 @@ body.modal-open {
 	height: 31px;
 	line-height: 31px;
 	text-align: center;
-	background-color: #c59d5f;
+	background-color: #dfb77d;
 	color: #ffffff;
 	z-index: 1040;
 	opacity: 1;
 	font-size: 12px;
 	font-weight: 400;
 	border-radius: 4px;
+	transform: translateY(6px);
 }
 
 .modal button.close:focus,
 .modal button.close:hover {
 	background-color: #222222;
+	
 }
 
 .reservation-popup .modal-content {
@@ -3162,7 +3165,7 @@ table tbody tr td {
 }
 
 .title .title--heading h1 {
-	color: #ffffff;
+	color: #a8834b;
 	font-size: 45px;
 	font-weight: 400;
 	line-height: 78px;
@@ -3171,7 +3174,7 @@ table tbody tr td {
 }
 
 .page-title .title--subtitle {
-	color: #c59d5f;
+	color: #f5d8a5;
 	font-family: 'Great Vibes', cursive;
 	font-size: 35px;
 	font-style: italic;
@@ -3298,7 +3301,7 @@ table tbody tr td {
 
 .heading .heading--desc {
 	font-family: 'Raleway', sans-serif;
-	color: #a5a5a5;
+	color: rgb(196, 127, 38);
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 24px;
@@ -3572,7 +3575,7 @@ table tbody tr td {
 .module .module-icon i {
 	font-size: 19px;
 	line-height: 24px;
-	color: #ffffff;
+	color: #dbad67;
 	font-weight: 400;
 }
 
@@ -3986,7 +3989,7 @@ table tbody tr td {
 
 .module-reservation .btn-popup {
 	height: 35px; /* Aumentei a altura para um toque mais moderno */
-	border: 2px solid #ffffff;
+	border: 2px solid #dbad67;
 	background-color: transparent;
 	margin-top: 35px; /* Reduzi o espaçamento para maior equilíbrio */
 	text-align: center;
@@ -3997,7 +4000,7 @@ table tbody tr td {
 	text-transform: uppercase;
 	letter-spacing: 0.8px; /* Aumentei o espaçamento para melhor leitura */
 	padding: 0 16px; /* Aumentei o padding para mais espaço interno */
-	color: #ffffff;
+	color: #dbad67;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4551,7 +4554,7 @@ table tbody tr td {
 	text-transform: uppercase;
 	font-weight: 800;
 	line-height: 100px;
-	color: #ffffff;
+	color: #dbad67;
 	padding: 0;
 	
 }
@@ -6154,7 +6157,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .slider .slide--subheadline {
-	color: #f9f9f9;
+	color: #f7ac37;
 	font-family: 'Great Vibes', cursive;
 	font-size: 35px;
 	font-weight: 400;
@@ -6165,7 +6168,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .slider .slide--headline {
-	color: #ffffff;
+	color: #dbad67;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 80px;
 	font-weight: 400;
@@ -6176,7 +6179,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .slider .slide--bio {
-	color: #f9f9f9;
+	color: #c3ae94;
 	font-family: 'Raleway', sans-serif;
 	font-size: 17px;
 	font-weight: 700;
@@ -6578,6 +6581,8 @@ a.next-section:hover {
 	overflow: hidden;
 	margin-bottom: 30px;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 .member:hover .member-img img {
@@ -6587,6 +6592,8 @@ a.next-section:hover {
 	transform: scale(1.1);
 	border-radius: 12px;
 	transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+	transform: translateY(6px);
+
 }
 
 .member .member-img {
@@ -6671,32 +6678,41 @@ a.next-section:hover {
 .member .member-info {
 	padding-top: 30px;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
+
 }
 
 .member .member-info h5 {
-	color: #282828;
+	color: #af7302;
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 1;
 	text-transform: capitalize;
 	margin-bottom: 14px;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 .member .member-info h6 {
 	font-family: 'Raleway', sans-serif;
-	color: #9b9b9b;
+	color: rgb(196, 127, 38);
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 1;
 	margin-bottom: 0;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 /*  team 1 */
 .team-1 .member .member-info {
 	padding-bottom: 30px;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 /*  team 3 */
@@ -6727,11 +6743,15 @@ a.next-section:hover {
 	-o-transition: all 0.35s;
 	transition: all 0.35s;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 .team-3 .member .member-info h5 {
 	color: #ffffff;
 	border-radius: 12px;
+	transform: translateY(-6px);
+
 }
 
 .team-3 .member:hover .member-overlay .member-hover .member-social {
@@ -6832,6 +6852,7 @@ a.next-section:hover {
 	left: 30px;
 	background-image: url(../images/testimonial/ribbon.png);
 	border-radius: 12px;
+	
 }
 
 .testimonial-1 .testimonial-panel:after {
@@ -6855,7 +6876,7 @@ a.next-section:hover {
 	font-size: 23px;
 	font-family: 'Kaushan Script', cursive;
 	font-weight: 400;
-	color: #282828;
+	color: #b37c14;
 	line-height: 32px;
 	margin-bottom: 23px;
 	border-radius: 12px;
@@ -6940,7 +6961,7 @@ a.next-section:hover {
 	font-size: 40px;
 	font-family: 'Great Vibes', cursive;
 	font-weight: 400;
-	color: #ffffff;
+	color: #fde8b4;
 	line-height: 39px;
 	margin-bottom: 26px;
 }
@@ -7214,7 +7235,7 @@ a.next-section:hover {
 \*------------------------------------*/
 .counter .count-box .counting {
 	font-family: 'Kaushan Script', cursive;
-	color: #ffffff;
+	color: #db9a00;
 	font-size: 70px;
 	font-weight: 400;
 	line-height: 1;
@@ -11773,7 +11794,7 @@ footer .text-right,
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 29px;
-	color: #282828;
+	color: #b16400;
 	margin-bottom: 10px;
 }
 
@@ -12704,7 +12725,7 @@ section.menu-5 .dishes-bg {
 .banner-7 .banner-panel .banner--img .banner--overlay {
 	position: absolute;
 	bottom: 10px;
-	color: #ffffff;
+	color: #a98040;
 	font-family: 'Great Vibes', cursive;
 	font-size: 30px;
 	font-weight: 400;

@@ -20,10 +20,10 @@ body {
 
 .wrapper {
     width: 420px;
-    background: rgba(180, 67, 22, 0.103);
+    background-color: rgba(255, 231, 174, 0.322);
     border-radius: 20px;
     padding: 30px 40px;
-    color: #fff;
+    color: #ffd16c;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -58,15 +58,14 @@ h1 {
     width: 100%;
     padding: 15px 20px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.171);
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
+    border: 2px solid rgba(213, 177, 99, 0.73);
+    border-radius: 12px;
+    color: #ffdfa3;
     transition: border 0.3s ease;
 }
 
 .input-box input:focus {
-    border-color: #fff;
+    border-color: #af8b16;
 }
 
 .input-box i {
@@ -74,7 +73,7 @@ h1 {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #8a5506;
     font-size: 20px;
 }
 
@@ -92,7 +91,7 @@ h1 {
 }
 
 .remember-forgot label input {
-    accent-color: #fff;
+    accent-color: #c22020;
     margin-right: 3px;
 }
 
@@ -108,10 +107,10 @@ h1 {
 .btn {
     width: 100%;
     padding: 15px 0;
-    background-color: #ca6740;
+    background-color: #e7c681;
     border: none;
-    border-radius: 30px;
-    color: white;
+    border-radius: 12px;
+    color: rgb(175, 116, 5);
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -120,7 +119,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #ee842d;
+    background-color: #e0b14be8;
     transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
 
@@ -149,10 +148,10 @@ h1 {
     top: 0;
     right: 0;
     cursor: pointer;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 12px;
     animation: fromRight 0.8s ease forwards 0.1s; /* Fechar vem da direita */
     transition: transform 0.3s ease;
-    background: #ca6740;
+    background: #e7c681;
     width: 40px; /* Largura do botão */
     height: 40px; /* Altura do botão */
     display: flex;
@@ -165,7 +164,7 @@ h1 {
 }
 
 .icon-close:hover{
-    background-color: #ee842d;
+    background-color: #e0b14be8;
     transform: scale(1.05); /* Leve aumento ao passar o mouse */
 } 
 

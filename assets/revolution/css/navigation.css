@@ -1639,7 +1639,7 @@ website:    http://www.themepunch.com
     width:16px;
     height:16px;
     background-color: rgba(0, 0, 0, 0);
-    box-shadow: inset 0 0 0 2px #FFF;
+    box-shadow: inset 0 0 0 2px #f7ac37;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
     position:absolute;
@@ -1655,8 +1655,8 @@ website:    http://www.themepunch.com
   height: 0;
   left: 0;
   width: 100%;
-  background-color: #FFF;
-  box-shadow: 0 0 1px #FFF;
+  background-color: #f7ac37;
+  box-shadow: 0 0 1px #f7ac37;
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
 }
