@@ -3625,7 +3625,7 @@ table tbody tr td {
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
-	background-color: rgba(34, 34, 34, 0.9);
+	background-color: rgba(153, 124, 71, 0.925);
 	position: fixed;
 }
 
@@ -3654,17 +3654,18 @@ table tbody tr td {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #755017;
 	width: 68px;
 	height: 29px;
 	line-height: 29px;
 	text-align: center;
-	background-color: #c59d5f;
+	background-color: #dbb478;
+	border-radius: 7px;
 }
 
 .module-cancel:hover {
 	opacity: 1;
-	color: #c59d5f;
+	color: #d1af7c;
 	background-color: #ffffff;
 }
 
@@ -3771,7 +3772,7 @@ table tbody tr td {
 	border-radius: 0;
 	width: 35px;
 	line-height: 57px;
-	color: #c59d5f;
+	color: #d3af79;
 	font-size: 28px;
 	font-weight: 400;
 	text-align: right;
