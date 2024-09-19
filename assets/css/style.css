@@ -1790,10 +1790,11 @@ blockquot {
 
 /* Button Secondary*/
 .btn--secondary {
-	background-color: #e7c681;
+	
 	color: #ce8d00f1;
 	border: 2px solid #dbb35d;
 }
+
 
 .btn--secondary:active,
 .btn--secondary:focus,
@@ -4373,7 +4374,7 @@ table tbody tr td {
 }
 
 .module .module-icon {
-	border: 1px solid #ffffff;
+	
 	width: 36px;
 	height: 36px;
 	line-height: 36px;
@@ -4408,8 +4409,8 @@ table tbody tr td {
 }
 
 .navbar.affix .module .module-icon {
-	border-color: #222222;
-	color: #222222;
+	
+	background-image: #ce8d00f1;
 }
 
 .navbar.affix .module .module-icon i {
