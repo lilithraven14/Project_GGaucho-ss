@@ -185,7 +185,7 @@ body {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
-    overflow-x: hidden;
+    
 }
 
 .map-container {
@@ -11931,6 +11931,7 @@ footer .text-right,
 
 .modal-body .content-popup {
 	padding: 50px 60px;
+	background: #f9e3b0;
 }
 
 .modal-body .content-popup p {

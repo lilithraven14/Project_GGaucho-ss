@@ -28,8 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.querySelector('.btn').addEventListener('click', function() {
-    document.querySelector('.wrapper').classList.add('rotate');
+document.querySelector('.btn').addEventListener('click', function(event) {
+    document.querySelector();
+    event.preventDefault();  // Previne o envio padrão do formulário
+    window.location.href = 'index.html';  // Redireciona para a página index.html
+});
+
+
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Previne o envio padrão do formulário
+    window.location.href = 'index.html';  // Redireciona para a página index.html
 });
 
 
@@ -93,6 +102,8 @@ mapContainer.addEventListener('mousemove', function(e) {
 mapContainer.addEventListener('mouseleave', function() {
     mapContainer.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
+
+
 
 
 
