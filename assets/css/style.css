@@ -397,6 +397,48 @@ h6 {
 	font-weight: 700;
 	margin: 0 0 28px;
 	line-height: 1;
+	position: relative;
+}
+
+
+
+
+
+
+
+.Painel {
+    font-size: 25px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    line-height: 1; /* Altura da linha */
+    text-transform: capitalize; /* Transforma o texto */
+    margin: 0 0 30px; /* Margens */
+    color: #a8834b; /* Cor do texto */
+    font-family: 'Kaushan Script', cursive; /* Fonte */
+    position: fixed; /* Fixa o painel na tela */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+
+
+
+
+
+.navbar-toggle-collapsed{
+	font-size: 33px;
+    line-height: 24px;
+    color: #dbad67;
+    font-weight: 400;
+    text-align: right;
+
+}
+
+
+
+
+.h20 h20{
+	font-size: 24px;
 }
 
 .h1,
@@ -3578,6 +3620,178 @@ table tbody tr td {
 	
 
 }
+
+
+.custom-line{
+	border: none; /* Remove a borda padrão */
+  height: 2px; /* Define a espessura da linha */
+  background-color: rgb(145, 102, 45); /* Cor da linha */
+  width: 100%; /* Largura da linha */
+  margin-top: 45px; /* Define o espaçamento acima da linha */
+  margin-bottom: 20px; /* Define o espaçamento abaixo da linha */
+
+}
+
+
+
+
+
+
+.botoes{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */
+}
+
+.botoes button{
+	margin-bottom: 5px; /* Espaçamento entre os botões */
+	padding: 10px 98px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+}
+
+.btn--abaout--btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+}
+
+
+/*===========menu=========================================*/
+
+
+.botao--sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */
+
+}
+
+.btn--sobre--btn button{
+	margin-bottom: 5px; /* Espaçamento entre os botões */
+	padding: 10px 98px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+
+}
+
+.btn--sobre--btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+}
+
+
+
+/*===============cadastro==============================================================*/
+
+.boton-sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */
+
+}
+
+.boton-sobre button{
+	margin-bottom: 13px; /* Espaçamento entre os botões */
+	padding: 10px 83px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+
+
+}
+
+.btn--sobre_btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+	
+}
+
+/*===================sobre===================*/
+
+
+.sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); 
+
+}
+
+.sobre button{
+	margin-bottom: 12px; /* Espaçamento entre os botões */
+	padding: 10px 96px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+
+}
+
+.dv-sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); 
+
+
+}
+
+
+
 
 .module .module-icon i {
 	font-size: 19px;
